@@ -46,28 +46,37 @@
 
         default_layer {
             bindings = <
-&kp LEFT_BRACKET  &kp Q  &kp W           &kp E        &kp R            &kp T        &kp Y        &kp U            &kp I        &kp O            &kp P     &kp RIGHT_BRACKET
-&kp GRAVE         &kp A  &hr LEFT_ALT S  &hr LCTRL D  &kp F            &kp G        &kp H        &hr RIGHT_WIN J  &hr RCTRL K  &hr RIGHT_ALT L  &kp SEMI  &kp SQT
-&kp BSLH          &kp Z  &kp X           &copy        &paste           &kp B        &kp N        &kp M            &kp COMMA    &kp DOT          &kp FSLH  &kp RG(SPACE)
-                                         &lt RSE TAB  &mt LSHFT SPACE  &lt LWR RET  &lt LWR ESC  &mt RSHFT BSPC   &lt RSE DEL
+&kp GRAVE     &kp Q  &kp W  &kp E      &kp R            &kp T      &kp Y      &kp U           &kp I      &kp O    &kp P     &kp LEFT_BRACKET
+&kp LEFT_ALT  &kp A  &kp S  &kp D      &kp F            &kp G      &kp H      &kp J           &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL     &kp Z  &kp X  &kp C      &kp V            &kp B      &kp N      &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
+                            &lt 0 TAB  &mt LSHFT SPACE  &lt 0 RET  &lt 3 ESC  &mt RSHFT BSPC  &lt 0 DEL
             >;
         };
 
-        lower_layer {
+        layer_2 {
             bindings = <
-&none  &none      &kp NUMBER_3           &kp NUMBER_2         &kp N1                 &kp ASTERISK   &none   &kp EXCLAMATION       &kp AT_SIGN           &kp HASH               &none  &none
-&none  &kp EQUAL  &hr LEFT_ALT NUMBER_6  &hr LEFT_CONTROL N5  &hr LEFT_GUI NUMBER_4  &kp KP_DIVIDE  &none   &hr RIGHT_GUI DOLLAR  &hr RCTRL PERCENT     &hr RIGHT_ALT CARET    &none  &none
-&none  &kp MINUS  &kp N9                 &kp N8               &kp N7                 &kp N0         &none   &kp AMPERSAND         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none
-                                         &lt ADJ TAB          &trans                 &trans         &trans  &trans                &lt ADJ DEL
+&kp LEFT_WIN  &kp KP_MULTIPLY  &kp N7        &kp N8        &kp N9        &kp PLUS    &kp LS(EQUAL)  &kp  &kp  &kp  &kp  &kp
+&kp LALT      &kp SLASH        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS   &kp            &kp  &kp  &kp  &kp  &kp
+&kp LCTRL     &kp N0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT  &kp            &kp  &kp  &kp  &kp  &kp
+                                             &trans        &trans        &trans      &kp            &kp  &kp
             >;
         };
 
-        raise_layer {
+        layer_3 {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none        &none        &none     &kp C_VOLUME_DOWN     &kp C_VOLUME_UP  &none            &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &none        &none        &kp LEFT  &kp DOWN              &kp UP           &kp RIGHT_ARROW  &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &none        &none        &none     &kp C_BRIGHTNESS_DEC  &kp C_BRI_UP     &none            &none
-                        &trans   &trans   &lt ADJ RET  &lt ADJ ESC  &trans    &trans
+&kp LEFT_GUI  &kp  &kp  &kp     &kp     &kp  &none       &kp HOME        &kp UP_ARROW    &kp PG_UP      &none               &kp RIGHT_GUI
+&kp LEFT_ALT  &kp  &kp  &kp     &kp     &kp  &kp DELETE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &none               &kp LEFT_ALT
+&kp LCTRL     &kp  &kp  &kp     &kp     &kp  &kp C_MENU  &kp END         &none           &kp PAGE_DOWN  &kp LA(LEFT_SHIFT)  &kp LCTRL
+                        &trans  &trans  &kp  &kp         &kp             &kp
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
